@@ -1,0 +1,62 @@
+<body>
+    <div class="header">
+        <h1>Desafio SPA - Aceleração Global Dev #2 - Avanade - Desenvolvido por: Silvio Manenti Junior</h1>
+        
+        <div class="contacts">
+            <a href="mailto:silviomjr@live.com">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">email</mat-icon>
+            </a>
+
+            <p><a href="https://www.github.com/Silviomjr">Github</a></p>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <mat-sidenav-container class="example-container">
+        <mat-sidenav mode="side" opened="opened">
+            <mat-action-list class="buttons_container">
+
+                <button (click)="showingPersonal()">Pessoal</button>
+                <button (click)="showingProfessional()">Profissional</button>
+                <button (click)="showingHobbies()">Hobbies</button>
+
+            </mat-action-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content class="main-body-spa" >
+            <div class="main-content" *ngIf="showMainContent">
+                <p>Exemplo de aplicação SPA usando Angular.</p>
+                <p>Clique nos botões ao lado para navegar.</p>
+            </div>
+
+
+
+            <div class="show-personal" *ngIf="showPersonal">
+                <spa-personal></spa-personal>
+            </div>
+
+            <div class="show-professional" *ngIf="showProfessional">
+                <spa-professional></spa-professional>
+            </div>
+
+            <div class="show-hobbies" *ngIf="showHobbies">
+                <spa-hobbies></spa-hobbies>
+            </div>
+
+            <button mat-raised-button color="primary" (click)="hideCards()" *ngIf="showButton">Voltar</button>
+            
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+    <div class="footer">
+        <h3>Desenvolvido por:</h3>
+        <p>Silvio Manenti Junior</p>
+    </div>
+</body>

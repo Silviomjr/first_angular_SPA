@@ -1,0 +1,26 @@
+.example-card {
+    max-width: 800px;
+  }
+  
+.example-header-image {
+    background-image: url('https://scontent.fbfh2-1.fna.fbcdn.net/v/t1.0-9/18198997_1455668934489550_4680070043466377150_n.jpg?_nc_cat=111&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeFiE5pt0g6_rjzFL2bEf4pmRM0glhHdHghEzSCWEd0eCLjIWk5-1QO49sW0g0v99YO2RbIthxYs3EvhUB6MxrVf&_nc_ohc=nlYNk4U6W88AX955nqu&_nc_ht=scontent.fbfh2-1.fna&oh=3aa354239e0b75dd94a91ce6743216b9&oe=5FD890BD');
+    background-size: cover;
+  }
+
+.link {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link a{
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px;
+    color: rgba(0,0,0,0.87);
+    transition: 1000ms;
+}
+
+.link a:hover {
+    color: rgba(0,0,0,0.4);
+}
+
